@@ -1,0 +1,228 @@
+primeramente y creo q solamente
+deben descargarse git les creara una carpeta pero eso no importa
+y todo lo q se trabaja se hace en "git bash"
+
+
+cuando se quiere hacer un branch
+asi es
+--------------------------------
+git clone DIRECCION
+git checkout -b NOMBRE NUEVO
+MODIFICAR
+git add .
+git commit -m 'nuevo commit'
+git checkout
+git push -v origin NOMBRE NUEVO
+y para remoto-----
+git push origin -v NOMBRE NUEVO
+
+PARA HACER HAY Q COMENTAR CADA COMMIT
+Y YO TENGO Q VERIFICAR 
+
+-cuando se actualiza en tu pc
+git pull		#MUCHO MEJOR PERO SI SE PONE LOS DOS MEJOR
+git fetch                            # Trae los cambios
+-cambiar de branch
+git checkout NOMBRE OTRO BRANCH
+-ver branch
+git branch  
+git remote -v 
+git remote -v show
+
+
+MAScomandos 
+-----------
+$ git init
+$ git add .                   # Marca todos los ficheros para el próximo commit.
+$ git commit -m "Estado inicial"      # Crea un nuevo commit con los ficheros marcados.
+
+Obtener el repositorio desde otra localización (fork):
+
+$ git clone <ruta al repositorio>      # Clonar y hacer checkout del HEAD de la rama actual
+
+Recibir los cambios desde el repositorio original:
+
+$ git pull
+$ git fetch                            # Trae los cambios
+
+
+
+
+CMD GIT BASH
+Welcome to Git (version 1.9.0-preview20140217)
+
+
+Run 'git help git' to display the help index.
+Run 'git help <command>' to display help for specific commands.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~
+$ cd git
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ ls
+panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ cd panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/panprueba (editpatomalo)
+$ git checkout master
+Switched to branch 'master'
+Your branch and 'origin/master' have diverged,
+and have 2 and 2 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/panprueba (master)
+$ git checkout editpatomalo
+Switched to branch 'editpatomalo'
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/panprueba (editpatomalo)
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ mkdir masterprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ cd masterprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba
+$ mkadir panprueba
+sh.exe": mkadir: command not found
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba
+$ mkdir panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba
+$ git clone https://github.com/pandebatalla/panprueba.git
+Cloning into 'panprueba'...
+remote: Counting objects: 16, done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 16 (delta 4), reused 11 (delta 2)
+Unpacking objects: 100% (16/16), done.
+Checking connectivity... done.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba
+$ cd panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git init
+Reinitialized existing Git repository in c:/Users/Alvaro M Patty Cruz/git/master
+prueba/panprueba/.git/
+//-----EN ESTE PUNTO DE HIZO UNA MODIFCAICON EN README
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git add .
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git commit .m 'lala'
+error: pathspec '.m' did not match any file(s) known to git.
+error: pathspec 'lala' did not match any file(s) known to git.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git commit -m 'lala'
+[master 3647986] lala
+ 1 file changed, 3 insertions(+), 9 deletions(-)
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git checkout
+Your branch is ahead of 'origin/master' by 1 commit.
+  (use "git push" to publish your local commits)
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ git push -u origin master
+Username for 'https://github.com': pandebatalla
+Password for 'https://pandebatalla@github.com':
+Counting objects: 7, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 292 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pandebatalla/panprueba.git
+   0f5bb0e..3647986  master -> master
+Branch master set up to track remote branch master from origin.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba/panprueba (master)
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/masterprueba
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ ls
+masterprueba  panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ mkdir master2patomalo
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ cd master2patomalo
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo
+$ mkdir panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo
+$ cd panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba
+$ git clone https://github.com/pandebatalla/panprueba.git
+Cloning into 'panprueba'...
+remote: Counting objects: 19, done.
+remote: Compressing objects: 100% (11/11), done.
+remote: Total 19 (delta 4), reused 14 (delta 2)
+Unpacking objects: 100% (19/19), done.
+Checking connectivity... done.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba
+$ ls
+panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba
+$ cd panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba/panprueba (m
+aster)
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo
+$ cd ..
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git
+$ cd master2patomalo
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo
+$ cd panprueba
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$ git init
+Reinitialized existing Git repository in c:/Users/Alvaro M Patty Cruz/git/master
+2patomalo/panprueba/.git/
+//-----EN ESTE PUNTO DE HIZO UNA MODIFCAICON EN README
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$ git add .
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$ git commit -m 'nose'
+[master 13d29d4] nose
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$ git branch
+* master
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$ git push origin -u master
+Username for 'https://github.com': patomalo
+Password for 'https://patomalo@github.com':
+Counting objects: 9, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 310 bytes | 0 bytes/s, done.
+Total 3 (delta 0), reused 0 (delta 0)
+To https://github.com/pandebatalla/panprueba.git
+   3647986..13d29d4  master -> master
+Branch master set up to track remote branch master from origin.
+
+Alvaro M Patty Cruz@ALVAROMPATTYCRU ~/git/master2patomalo/panprueba (master)
+$

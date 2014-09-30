@@ -1,0 +1,5 @@
+este es una especie de indicacion de como trabajar en grupo
+http://code.tutsplus.com/articles/team-collaboration-with-github--net-29876
+
+este tiene una lista de comandos
+http://www.edy.es/dev/docs/git-guia-rapida/
